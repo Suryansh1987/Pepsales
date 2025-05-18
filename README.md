@@ -1,6 +1,10 @@
-# Notification API Service Pepsales (use the test collection given at the end)
+# Notification API Service Pepsales (use the test collection to test endpoints)
 
 A robust notification system that supports in-app, email, and SMS notifications.
+
+For easy testing, you can use our Postman collection:
+
+https://www.postman.com/pepsales-7521/workspace/pepsales/collection/39544043-1852aa88-af33-4cb9-be50-456b7b4dc65f?action=share&creator=39544043
 
 ## Features
 
@@ -86,9 +90,7 @@ Notification API/
     └── Mark as Read               # Mark notification as read
 ```
 
-For easy testing, you can use our Postman collection:
 
-https://www.postman.com/pepsales-7521/workspace/pepsales/collection/39544043-1852aa88-af33-4cb9-be50-456b7b4dc65f?action=share&creator=39544043
 
 Alternatively import the  JSON into Postman named as test.json
 
