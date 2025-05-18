@@ -45,7 +45,7 @@ These are the only email address and phone number verified on our trial accounts
     "category": "test",
     "priority": "high"
   },
-  "phone": "+1234567890" // Optional, for SMS notifications
+  "phone": "+918423280190" // Optional, for SMS notifications
 }
 ```
 
