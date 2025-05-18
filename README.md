@@ -1,4 +1,4 @@
-# Notification API Service Pepsales (use the test collection to test endpoints)
+# Notification API Service Pepsales (use the test collection to test endpoints) Screenshot of mail and sms are attached 
 
 A robust notification system that supports in-app, email, and SMS notifications.
 
@@ -93,4 +93,11 @@ Notification API/
 
 
 Alternatively import the  JSON into Postman named as test.json
+
+Screenshots
+![WhatsApp Image 2025-05-18 at 20 29 05_a3c2e27c](https://github.com/user-attachments/assets/8cd275fe-bb21-4484-a278-5a5e287bb3bf)
+
+![image](https://github.com/user-attachments/assets/3e5b0d70-cce8-4afa-b59a-59aa23829799)
+
+
 
