@@ -7,9 +7,8 @@ A robust notification system that supports in-app, email, and SMS notifications.
 - ✉️ Multiple notification types (in-app, email, SMS)
 - 🔔 User-specific notifications
 - 📱 SMS integration via Twilio
-- 📧 Email sending capabilities
+- 📧 Email sending capabilities via MailSender
 - 📋 Notification status tracking
-- 🔄 Retry mechanism for failed emails
 
 ⚠️ **PLEASE READ BEFORE TESTING** ⚠️
 
