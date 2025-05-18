@@ -1,4 +1,4 @@
-# Notification API Service Pepsales
+# Notification API Service Pepsales (use the test collection given at the end)
 
 A robust notification system that supports in-app, email, and SMS notifications.
 
