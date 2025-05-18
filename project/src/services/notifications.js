@@ -75,25 +75,24 @@ export const notificationService = {
     }
   },
   
- // Updated sendSmsNotification function with better error handling and logging
+ 
 async sendSmsNotification(data) {
   console.log('sendSmsNotification called with data:', {
     userId: data.userId,
     title: data.title,
-    phone: data.phone // Log the phone to verify it's being passed correctly
+    phone: data.phone 
   });
   
-  // More robust phone validation
   if (!data.phone || data.phone.trim() === '') {
     console.error('Phone number missing or empty in sendSmsNotification');
     throw new Error('Phone number is required for SMS notifications');
   }
   
-  // Validate phone number format (basic E.164 check)
+
   const phoneRegex = /^\+[1-9]\d{1,14}$/;
   if (!phoneRegex.test(data.phone)) {
     console.warn('Phone number may not be in E.164 format:', data.phone);
-    // Continue anyway as some phone systems accept other formats
+  
   }
 
   console.log('Creating SMS notification record in database');
@@ -105,7 +104,7 @@ async sendSmsNotification(data) {
       type: 'sms',
       metadata: {
         ...data.metadata,
-        phoneNumber: data.phone // Store the phone number in metadata for reference
+        phoneNumber: data.phone 
       }
     })
     .returning();
@@ -141,7 +140,7 @@ async sendSmsNotification(data) {
   } catch (smsError) {
     console.error('SMS sending failed:', smsError);
     
-    // Log more details about the error
+
     if (smsError.response) {
       console.error('SMS Error Response:', smsError.response);
     }
@@ -184,7 +183,7 @@ async sendSmsNotification(data) {
   },
   
   async markAsRead(notificationId, userId) {
-    // First check if the notification exists and belongs to the user
+   
     const existingNotification = await db.select()
       .from(notifications)
       .where(
@@ -196,7 +195,7 @@ async sendSmsNotification(data) {
       .limit(1);
     
     if (existingNotification.length === 0) {
-      // Return a default response instead of throwing error
+      
       return {
         id: notificationId,
         status: 'not_found',
@@ -204,7 +203,7 @@ async sendSmsNotification(data) {
       };
     }
     
-    // Update the notification status
+   
     const updatedNotification = await db.update(notifications)
       .set({ status: 'read' })
       .where(
